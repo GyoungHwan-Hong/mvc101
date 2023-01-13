@@ -1,0 +1,16 @@
+
+@model string[]
+
+@{
+    ViewData["Title"] = "Bogus Page";
+    var date = (System.DateTime) ViewData["Data"]!;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>This is first ASP.NET page authored by @ViewData["Author"] on @date.</p>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Hello</a>.</p>
+</div>
